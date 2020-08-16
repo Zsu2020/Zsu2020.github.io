@@ -1,3 +1,7 @@
+body{ 
+    background-image: url(/Pages/jpeg/bg3.jfif);
+    background-size: cover;
+}
 .login-div{
     padding: 15px;
     border: solid 1px #c0c0c0;
@@ -9,6 +13,13 @@ display: inline-block;
     display: block;
     margin-bottom: 7px;
 }
+.login-div input[type="email"]{
+    border: solid 1px blue;
+}
+.login-div input[type="password"]{    
+    border: solid 1px red;
+}
+
 .login-div button:hover {
     box-shadow: 2px 2px  3px;
 }
@@ -17,3 +28,11 @@ display: inline-block;
     box-shadow: 2px 2px  3px;
     boredr: none;
 }
+ul li:last-child{
+    text-decoration: underline;
+}
+
+ul li:nth-child(2){
+        color: red;
+
+    }

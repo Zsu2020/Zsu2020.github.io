@@ -3,10 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Order</title>
+    <link rel="stylesheet" href="css/selectors.css">
+    <link rel="stylesheet" href="/Pages/style.css">  
 </head>
 <body>
+    
+
+<div class="container">
+    <div class="row">
+        <div class="col-0.1"></div>
+        <div class="col-4"></div>
+    </div>
+
+<div class="container">
+
+<form>
     <ul>
         <li>
             <a href="/">Home</a>
@@ -21,49 +33,74 @@
             <a href="/about.html">About</a>
         </li>
     </ul>
+    <fieldset>
+        <legend>Személyes adatok</legend>
+           <div class="form-group">
+        <label for="name">Név: *</label>
+        <input class="form-contol" id="name" name="name" type="text"required>
     
-
-    <h1>U2 - With or without You</h1>
-    <h2>
-
-See the stone set in your eyes
-See the thorn twist in your side
-I wait for you
-
-Sleight of hand and twist of fate
-On a bed of nails she makes me wait
-And I wait without you
-</h2>
-
-<h3 span class="bold">
-
-With or without you
-With or without you
-</span></h3>
-<h2>
-Through the storm we reach the shore
-You give it all but I want more
-And I'm waiting for you
-
-My hands are tied
-My body bruised, she's got me with
-Nothing to win and
-Nothing left to lose
-</h2>
-<h3 span class="bold">
-With or without you
-With or without you
-I can't live
-With or without you
-</span></h3>
-
-    
-
-    <div class="img-div"> 
-        <img id="img-1" src="/Pages/jpeg/u2.jfif" alt="U2">   
-       <img src="/Pages/jpeg/u22.jfif" alt="U2">
-       <img src="/Pages/jpeg/u2.jfif" alt="U2">   
-       <img src="/Pages/jpeg/u22.jfif" alt="U2">
+    <div class="form-group">
+        <label for="email">Email cím: *</label>
+        <input class="form-contol" id="email" name="email" type="email" required>
     </div>
+    <div class="form-group">
+        <label for="address">Cím:*</label>
+        <input class="form-contol" id="address" name="address" type="text" required>
+    </div>
+    <div>
+        <label for="comment">Megjegyzés:</label>
+        <textarea id="comment" name="comment" rows="5"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    </fieldset>
+
+<fieldset>
+    <legend>Termék adatai</legend>
+    <span>Extra feltét:</span>
+    <div>
+        <input checked id="nothing" name="extra" type="radio" value="0">
+        <label for="nothing">Nem kérek</label>
+    </div>
+    <div>
+        <input id="cheese" name="extra" type="radio" value="300">
+            <label for="cheese">feltét 1</label>
+    </div>
+    <div>
+        <input id="double-cheese" name="extra" type="radio" value="600">
+            <label for="double-cheese">feltét 2</label>
+    </div>
+    <div>
+        <input id="double-meat" name="extra" type="radio" value="1000">
+            <label for="double-meat">feltét 3</label>
+    </div>
+    <div>
+        <input id="double-double" name="extra" type="radio" value="1600">
+            <label for="double-double">feltét 4</label>
+    </div>
+    <div>
+        <input id="valami-mas" name="extra" type="radio" value="1800">
+            <label for="valami-mas">feltét 5</label>
+    </div>
+    <div>
+        <label for="sauce">Szósz:</label>
+        <select id="sauce" name="sauce">
+            <option value="0" selected>szósz 1</option>
+            <option value="100">szósz 2</option>
+        </select>
+    </div>
+    <div>
+        <label for="quantity">Mennyiség:</label>
+        <input id="quantity" name="quantity" type="number" min="1" max="10" value="2000">
+    </div>
+    
+</fieldset>
+    <div>
+        <input type="button" value="Rendelés leadása"> Ár: <span>1200</span> Ft
+    </div>
+</form>
+
+
+</div>
 </body>
 </html>
